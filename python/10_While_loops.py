@@ -34,15 +34,16 @@ user_Key = (input("Enter the 3 letter month key: "))
 newUser_Key = user_Key.upper()
 
 
-while newUser_Key.upper() not in month_Conversions:
+while newUser_Key not in month_Conversions:
     print("Sorry, Wrong Answer!")
     tryAgain_Key = (input("Try Again: "))
     print()
-    if tryAgain_Key.upper() in month_Conversions:
-        print("Result is: " + month_Conversions.get(str(tryAgain_Key.upper())))
+    tryAgain_Key = tryAgain_Key.upper()
+    if tryAgain_Key in month_Conversions:
+        print("Result is: " + month_Conversions.get(tryAgain_Key))
         print("")
         break
 else:
     print()
-    print("Your Result is: ", month_Conversions.get(str(newUser_Key.upper()), "Thank you!"))
+    print("Your Result is: ", month_Conversions.get(newUser_Key, "Thank you!"))
 

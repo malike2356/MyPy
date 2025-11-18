@@ -22,7 +22,7 @@ month_Conversions = {
 user_Key = (input("Enter your 3 letter key: "))
 newUser_Key = user_Key.upper()
 
-if newUser_Key.upper() in month_Conversions:
-    print(month_Conversions.get(str(user_Key.upper())))
+if newUser_Key in month_Conversions:
+    print(month_Conversions.get(newUser_Key))
 else:
     print("Not a Valid Month")

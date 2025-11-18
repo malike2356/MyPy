@@ -9,7 +9,7 @@ def index(request):
 
 
 def new(request):
-    return HttpResponse("This is is a page for New products")
+    return HttpResponse("This is a page for New products")
 
 
 def categories(request):
